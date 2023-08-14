@@ -1,0 +1,22 @@
+<table class="table bg-white">
+    <thead class="bg-info">
+      <tr class="text-white">
+        
+        <th scope="col">sitename</th>
+        <th scope="col">sitecode</th>
+        <th scope="col">surveydate</th>
+        <th scope="col">report</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      {% for ANSD in AccessNewsiteData %}
+      <tr>
+        <td>{{ ANSD.sitename }}</td>
+        <td>{{ ANSD.sitecode }}</td>
+        <td>{{ ANSD.surveyDate }}</td>
+        <th scope="row"><a class="btn btn-info btn-sm" href="{% url 'download-report' ANSD.id %}">Download</a></th>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
