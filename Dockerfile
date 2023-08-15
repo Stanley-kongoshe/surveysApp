@@ -19,6 +19,7 @@ RUN pip install --upgrade pip
 # copy whole project to your docker home directory. 
 COPY . $DockerHOME  
 RUN chmod 777 $DockerHOME/db.sqlite3
+RUN chmod -R 777 $DockerHOME/
 # run this command to install all dependencies  
 RUN pip install -r requirements.txt  
 # port where the Django app runs  
