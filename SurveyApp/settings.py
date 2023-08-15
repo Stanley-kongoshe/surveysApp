@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.ngrok-free.app','.apps.lab.ocp.lan']
 ALLOWED_ORIGINS = ['http://*', 'https://*']
-CSRF_TRUSTED_ORIGINS = ['https://26e2-77-246-55-237.ngrok-free.app','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://26e2-77-246-55-237.ngrok-free.app','https://*.127.0.0.1','https://survey-app-surveys-app.apps.lab.ocp.lan','https://surveysapp-surveys-app.apps.lab.ocp.lan']
 
 
 
